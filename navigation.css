@@ -1,0 +1,147 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body
+
+{
+  align-items: center;
+
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.bi-dribbble, .web-top-slider, .nav-link,.bi-x-square
+{
+  box-shadow: rgba(17, 17, 26, 0.6) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.web-list, .web-logo, .nav-link, .nav-linkd
+{
+  text-shadow: rgba(17, 17, 26, 0.6) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+/*-----------  hidden menu ----------- */
+
+.web-top-slider
+{
+  align-items: flex-start;
+  background-color: rgb(199, 216, 223);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  right: 0;
+  row-gap: 30px;
+  padding-top: 33px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 350px;
+  z-index: 9;
+}
+
+.web-top-slider a
+{
+  height: 6vh;
+  width: 60%;
+}
+
+.menu
+{
+  display: none;
+  font-size: 50px;
+  
+}
+
+.bi-x-square
+{
+ font-size: 50px;
+ padding-top: 10px;
+}
+
+.nav-link
+{
+  background-color: snow !important;
+  border-radius: 10px;
+  font-size: 27px !important;
+  padding-top: 4px !important;
+}
+
+
+/*------------ Main nav starts ----------------- */
+
+.web-list, .web-logo, .nav-linkd
+{
+  display: flex;
+  font-size: 25px;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 1em;
+  position: relative;
+}
+
+.web-list a 
+{
+  text-decoration: none;
+}
+
+.web-logo i
+{
+  align-items: center;
+  color: #f3ecee;
+  background-color: rgb(40, 40, 3);
+  border-radius: 5px;
+  display: flex;
+  font-size: 30px;
+  height: 5vh;
+  justify-content: center;
+  margin-top: -0.3em;
+  position: relative;
+  right: 17em;
+  text-align: center;
+  width: 70px;
+} 
+
+.nav-linkd
+{
+  border-radius: 5px;
+  color: rgb(2, 31, 35);
+  height: 5vh;
+  margin-right: .6em;
+  padding: 0 8px ;
+  
+}
+
+
+
+
+ @media screen and (max-width: 600px)  {
+
+.menu
+{
+  display: block;
+}
+
+ .nav-linkd
+{
+  display: none;
+}
+
+
+.web-logo i
+{
+  right: 14em;
+}
+
+}
